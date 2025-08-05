@@ -1,18 +1,15 @@
-import React from "react";
+function Navbar() {
 
-function Navbar(){
     return(
-        <div>
-            <nav className="bg-cyan-600 flex justify-between">
-                <ul className="bg-cyan-600 flex justify-items-center">
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Contacts</li>
-                </ul>
-            </nav>
-            
-        </div>
+        <nav className="fixed top-0 left-0 w-full bg-white shadow p-4 z-50 flex gap-6">
+            <button> Home </button>
+            <button> About-me </button>
+            <button> projects </button>
+            <button> services</button>
+        </nav>
     )
+
 }
 
 export default Navbar
+
