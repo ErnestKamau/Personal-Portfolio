@@ -21,7 +21,6 @@ export function useInViewAnimation(threshold = 0.1) {
         };
     }, [threshold]);
 
-    console.log("Is visible?", isVisible);
 
     return [viewRef, isVisible];
 }
