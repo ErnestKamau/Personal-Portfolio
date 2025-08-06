@@ -3,6 +3,7 @@ import Hero from './sections/Hero';
 import AnimatedSection from './AnimatedSection';
 import Skills from './sections/Skills';
 import Timeline from './sections/Timeline'
+import Projects from './sections/Projects'
 
 function App() {
 
@@ -21,10 +22,13 @@ function App() {
       <Skills />
      </AnimatedSection>
 
-     <AnimatedSection>
+     {/* <AnimatedSection>
       <Timeline />
-     </AnimatedSection>
+     </AnimatedSection> */}
 
+     <AnimatedSection>
+      <Projects />
+     </AnimatedSection>
 
 
     </div>
