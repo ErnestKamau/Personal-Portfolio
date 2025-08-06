@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import AnimatedSection from './AnimatedSection';
 import Skills from './sections/Skills';
+import Timeline from './sections/Timeline'
 
 function App() {
 
@@ -20,9 +21,9 @@ function App() {
       <Skills />
      </AnimatedSection>
 
-
-
-
+     <AnimatedSection>
+      <Timeline />
+     </AnimatedSection>
 
 
 
