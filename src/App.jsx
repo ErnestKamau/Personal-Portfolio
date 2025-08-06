@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import AnimatedSection from './AnimatedSection';
+import Skills from './sections/Skills';
 
 function App() {
 
@@ -15,6 +16,9 @@ function App() {
         <Hero />
       </AnimatedSection>
      
+     <AnimatedSection>
+      <Skills />
+     </AnimatedSection>
 
 
 
