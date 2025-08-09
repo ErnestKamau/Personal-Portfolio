@@ -10,7 +10,7 @@ function Projects() {
     return(
         <div className="py-16 bg-gray-50">
             <div className="max-w-6xl mx-auto px-6">
-                <div className="border-2 border-blue-600 rounded-lg p-8">
+                <div className="bg-white shadow-lg rounded-lg p-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">My Featured Projects</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -19,14 +19,35 @@ function Projects() {
                             <div style={{backgroundImage: `url(${investments})`}} className="w-full h-48 bg-cover bg-center flex items-center justify-center"></div>
                             <div className='p-6'>
                                 <h3 className='text-lg font-semibold text-gray-900 mb-2'>Shirikisha chama management system</h3>
-                                <p className='px-3 mb-3 font-extralight text-sm'>Shirikisha is a full-stack web platform that simplifies and digitizes the management of Kenyan chamas (investment groups). Members can create, join, and manage chama groups, track contributions and finances, schedule meetings, make announcements, and assign roles — all in one platform.</p>
+                                <p className='px-3 mb-1 font-light text-sm'>Shirikisha is a full-stack web platform that digitizes and streamlines the management of Kenyan chamas (investment groups). The system enables users to create, join, and manage groups, track contributions, schedule meetings, make announcements, and assign roles through a modern React frontend and a secure Python (Flask) backend. </p>
+                                <p className='px-3 mb-0.5 font-light text-sm'>The project utilizes RESTful API design, JWT-based token authentication, and role-based access control to ensure secure and personalized user experiences. It leverages SQLAlchemy ORM for robust data modeling and relationship management, with Alembic handling database migrations.</p>
+                                <p className='px-3 mb-3 font-light text-sm'>The frontend uses React hooks for state management and Tailwind CSS for responsive design, while Axios facilitates seamless communication with the backend. CORS is configured to enable safe cross-origin requests, and error handling is implemented throughout to provide clear feedback to users. Overall, Shirikisha follows best practices in full-stack development, secure authentication, and modular, maintainable code architecture</p>
                                 <div className='flex flex-wrap gap-2 mb-4'>
-                                    <span className='px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs font-medium'>React Javascript</span>
+                                    <span className='px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium'>React Js</span>
                                     <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium">Python (Flask)</span>
-                                    <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium">API Integration</span>
+                                    <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium">RESTful API</span>
+                                    <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium">JWT-based token authentication</span>
+                                    <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium">Role-Based Access Control</span>
+                                    <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium">SQLAlchemy ORM</span>
+                                    <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium">State Management (React Hooks)</span>
+                                    <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium">Axios </span>
+                                    <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-medium">CORS</span>
                                 </div>
-                                <button className='px-2 text-blue-600 hover:text-blue-700 font-medium text-sm'>Github repo</button>
-                                <button className='px-2 text-blue-600 hover:text-blue-700 font-medium text-sm'>Live Demo</button>
+                                <button className='px-2 text-blue-600 hover:text-blue-700 font-medium text-sm' onClick={()=>{window.open(
+                                    "https://github.com/ErnestKamau/Shirikisha--chama-management-system/tree/ernest",
+                                    "_blank",
+                                    "noopener,noreferrer"
+                                )}}>
+                                    Github repo
+                                </button>
+                                <button className='px-2 text-blue-600 hover:text-blue-700 font-medium text-sm' onClick={()=>{window.open(
+                                    "https://shirikisha-investment-groups-manager.onrender.com/",
+                                    "_blank",
+                                    "noopener,noreferrer"
+                                )}}
+                                >
+                                    Live Demo
+                                </button>
                             </div>
                         </div>
 
