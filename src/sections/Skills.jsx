@@ -20,7 +20,7 @@ function Skills() {
         <div className="bg-gray-500 py-1">
         <div className="min-h-[90vh] bg-gradient-to-b from-[#57059e] to-[#4a00e0] py-16 shadow-lg  rounded-lg">
 
-            <div className="w-[90vh] mx-auto bg-[rgba(0,0,22,0.4)] text-white rounded-2xl p-8 mt-12">
+            <div className="w-[90vh] mx-auto bg-[rgba(0,0,22,0.4)] text-white rounded-2xl p-8 ">
                 <div className="text-center mb-12">
                     <h2 className="text-2xl font-bold text-white mb-4">
                         Skills &amp; <span className="text-[rgb(255,230,0)]">Abilities</span>
