@@ -9,26 +9,31 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-
       <div>
         <Navbar />
       </div>
 
+      <div id='home'>
+        <AnimatedSection>
+          <Hero />
+        </AnimatedSection>
+      </div>
+      
+     <div id='skills'>
       <AnimatedSection>
-        <Hero />
-      </AnimatedSection>
-     
-     <AnimatedSection>
-      <Skills />
+        <Skills />
      </AnimatedSection>
+     </div>
 
      {/* <AnimatedSection>
       <Timeline />
      </AnimatedSection> */}
 
-     <AnimatedSection>
-      <Projects />
+     <div id='projects'>
+      <AnimatedSection>
+        <Projects />
      </AnimatedSection>
+     </div>
 
 
     </div>
