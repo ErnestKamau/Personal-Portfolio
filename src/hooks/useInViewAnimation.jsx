@@ -15,11 +15,12 @@ export function useInViewAnimation(threshold = 0.1) {
         );
 
         if (node) observer.observe(node);
+        console.log(isVisible)
 
         return () => {
             if (node) observer.unobserve(node);
         };
-    }, [threshold]);
+    }, [threshold, isVisible]);
 
 
     return [viewRef, isVisible];

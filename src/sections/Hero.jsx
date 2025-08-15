@@ -4,8 +4,8 @@ import { handleScroll } from '../hooks/handleScroll';
 
 function Hero() {
   return (
-    <div className="relative flex flex-wrap items-center min-h-screen bg-white rounded-lg shadow-sm shadow-gray-400">
-      <div className="flex-1 p-8 text-center md:text-left z-10 shadow-sm shadow-amber-400 rounded-lg ml-4">
+    <div id='home' className="relative flex flex-wrap items-center min-h-screen bg-gray-100 rounded-lg shadow-lg">
+      <div className="flex-1 p-8 text-center md:text-left z-10 shadow-lg rounded-lg ml-4">
         <h1 className="text-5xl font-bold text-[#002057]">
           Hi there I'm <span className="text-[#ff7b00]">Ernest Kamau</span>
         </h1>

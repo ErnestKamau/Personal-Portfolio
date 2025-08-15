@@ -12,28 +12,26 @@ function App() {
       <div>
         <Navbar />
       </div>
-
-      <div id='home'>
-        <AnimatedSection>
-          <Hero />
-        </AnimatedSection>
-      </div>
       
-     <div id='skills'>
+      <AnimatedSection>
+        <Hero />
+      </AnimatedSection>
+      
+     
       <AnimatedSection>
         <Skills />
-     </AnimatedSection>
-     </div>
+      </AnimatedSection>
+
 
      {/* <AnimatedSection>
       <Timeline />
      </AnimatedSection> */}
 
-     <div id='projects'>
+    
       <AnimatedSection>
         <Projects />
-     </AnimatedSection>
-     </div>
+      </AnimatedSection>
+     
 
 
     </div>

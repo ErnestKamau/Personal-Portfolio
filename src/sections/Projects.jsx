@@ -2,13 +2,12 @@ import school from '../assets/school.jpg'
 import investments from '../assets/investments.jpg'
 import commerce from '../assets/e-commerce.jpg'
 import laptop from '../assets/Laptop.jpg'
-import { Divide } from 'lucide-react'
 
 
 function Projects() {
 
     return(
-        <div className="py-16 bg-gray-50">
+        <div id='projects' className="py-16 bg-gray-50">
             <div className="max-w-max mx-auto px-6">
                 <div className="bg-white shadow-lg rounded-lg p-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">My Projects</h2>
