@@ -1,5 +1,6 @@
 import profile from '../assets/profile pic.webp'
 import { ArrowBigDown } from 'lucide-react';
+import { handleScroll } from '../hooks/handleScroll';
 
 function Hero() {
   return (
@@ -11,7 +12,10 @@ function Hero() {
         <p className="mt-4 text-xl text-black">
           I'm a Full-stack web developer.
         </p>
-        <button className="flex gap-2 mt-6 px-6 py-3 rounded-full bg-[#2506ad] text-white font-bold shadow-lg hover:bg-[#1a047e] transition">
+        <button
+        onClick={()=>handleScroll('about-me')}
+        className="flex gap-2 mt-6 px-6 py-3 rounded-full bg-[#2506ad] text-white font-bold shadow-lg hover:bg-[#1a047e] transition"
+        >
           About Me <ArrowBigDown/>
         </button>
       </div>
