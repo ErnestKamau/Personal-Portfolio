@@ -5,6 +5,7 @@ import Skills from './sections/Skills';
 // import Timeline from './sections/Timeline'
 import Projects from './sections/Projects'
 import Services from './sections/Services';
+import Contact from './sections/Contact';
 
 function App() {
 
@@ -36,8 +37,10 @@ function App() {
       <AnimatedSection>
         <Projects />
       </AnimatedSection>
-     
 
+      <AnimatedSection>
+       <Contact/>
+      </AnimatedSection>
 
     </div>
   )
