@@ -4,6 +4,7 @@ import AnimatedSection from './AnimatedSection';
 import Skills from './sections/Skills';
 // import Timeline from './sections/Timeline'
 import Projects from './sections/Projects'
+import Services from './sections/Services';
 
 function App() {
 
@@ -15,6 +16,10 @@ function App() {
       
       <AnimatedSection>
         <Hero />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <Services />
       </AnimatedSection>
       
      
