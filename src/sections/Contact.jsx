@@ -1,5 +1,4 @@
 import { FaHeadset } from "react-icons/fa6"
-import { MdPerson, MdEmail, MdPhone, MdMessage } from 'react-icons/md';
 
 
 function Contact(){
