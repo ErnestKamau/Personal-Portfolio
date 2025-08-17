@@ -1,7 +1,38 @@
 import { FaHeadset } from "react-icons/fa6"
-
+import emailjs from 'emailjs-com';
+import { useState } from "react";
 
 function Contact(){
+    const[formData, setFormData] = useState({
+        from_name: "",
+        from_email: "",
+        message: "",
+    })
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        emailjs.send(
+            "service_elsl54i",
+            "template_oye0gra",
+            formData,
+            "-3CYYjK9pMds0FCy5"
+        ).then(
+            (result) => {
+                alert ("Message sent!")
+                setFormData({ from_name: "", from_email: "", message: "" })
+            },
+            (error) => {
+                alert("Something went wrong. Try again.")
+                console.error(error.text)
+            }
+        )
+    }
+
     return(
         <div id='contact' className="flex-row-reverse bg-blue-100 py-8 items-center justify-center">
             <div className="text-center flex justify-center gap-2 mb-4">
@@ -12,27 +43,33 @@ function Contact(){
              <div className="max-w-max mx-auto px-6">
                 <div className="w-[90vh] relative flex items-center justify-center rounded-lg shadow-lg bg-white">
                     <div>
-                        <form className="flex flex-col gap-4 p-8">
+                        <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-8">
                             <input 
                                 type="text" 
-                                placeholder="Name"
+                                name="from_name"
+                                placeholder="Your Name"
+                                value={formData.from_name}
+                                onChange={handleChange}
                                 className="w-100 p-2 border bg-blue-100 border-[#2506ad] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
+                                required
                             />
                             <input 
-                                type="email" 
+                                type="email"
+                                name="from_email" 
                                 placeholder="Email"
+                                value={formData.from_email}
+                                onChange={handleChange}
                                 className="p-2 border bg-blue-100 border-[#2506ad] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
-                            />
-
-                            <input
-                                type="text"
-                                placeholder="phone number"
-                                className="p-2 border bg-blue-100 border-[#2506ad] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
+                                required
                             />
 
                             <textarea 
-                                placeholder="Message"
+                                placeholder="Your Message"
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
                                 className="p-2 border bg-blue-100 border-[#2506ad] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900 h-32"
+                                required
                             ></textarea>
                             <button
                                 type="submit"
